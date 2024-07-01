@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopWala Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#"><b>ShopWala</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="bg-aqua">
+        <div class="row my-5 px-5">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row px-3" style="justify-content: space-between;">
+                            <h5 class="card-title">Customer List</h5>
+                            <div class="row">
+                                <button class="btn btn-primary mr-1" onclick="addCustomer()">Add Customer</button>
+                                <button id="clear" class="btn btn-danger mr-3" onclick="clearStorage()">Clear
+                                    list</button>
+                            </div>
+                        </div>
+                        <table class="table table-hover mt-4">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">No. of Items</th>
+                                    <th scope="col">Total Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody id="customerItems">
+                            </tbody>
+                        </table>
+                        <ul id="customerItems"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Customer Details</h5>
+                        <p id="customerName"></p>
+                        <p id="purchaseCount"></p>
+                        <p id="purchaseAmount"></p>
+                        <button class="btn btn-primary" id="editButton" onclick="editCustomer()">Edit</button>
+                        <button class="btn btn-danger" id="deleteButton" onclick="confirmDelete()">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

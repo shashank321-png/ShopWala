@@ -1,0 +1,50 @@
+/* styles.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #007bff; 
+}
+
+.navbar-brand {
+    font-style: oblique;
+    color: white; 
+    font-size: 1.5rem; 
+    margin-left: 30px; 
+}
+
+.card {
+    height: 80vh;
+    background-color: blanchedalmond;
+}
+
+.btn-primary {
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.btn-danger {
+    margin-right: 3rem;
+    display: inline-block;
+}
+
+.table {
+    margin-top: 1rem;
+}
+
+.bg-aqua {
+    background-color: aqua;
+}
+
+#customerName,
+#purchaseCount,
+#purchaseAmount {
+    margin-bottom: 1rem;
+}
+
+#editButton,
+#deleteButton {
+    display: inline-block;
+}
